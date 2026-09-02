@@ -6,7 +6,7 @@ public class ControlePlataforma2D : MonoBehaviour
 {
     [Header("Configurações de Movimento")]
     [SerializeField] private float moveSpeed = 5f;
-    [SerializeField] private float jumpForce = 5f;
+    [SerializeField] private float jumpForce = 2f;
 
     private Rigidbody2D rb;
     private float moveInputX;
