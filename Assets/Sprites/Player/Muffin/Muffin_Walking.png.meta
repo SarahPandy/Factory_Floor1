@@ -11,6 +11,27 @@ TextureImporter:
   - first:
       213: 6176773325926874937
     second: Muffin_Walking_2
+  - first:
+      213: 4001233649689190685
+    second: Muffin_Walking_3
+  - first:
+      213: -1806604249585834179
+    second: Muffin_Walking_4
+  - first:
+      213: 691075137171665899
+    second: Muffin_Walking_5
+  - first:
+      213: -5283002431393562349
+    second: Muffin_Walking_6
+  - first:
+      213: -432582834501253468
+    second: Muffin_Walking_7
+  - first:
+      213: -496402719259422707
+    second: Muffin_Walking_8
+  - first:
+      213: -471004367753918316
+    second: Muffin_Walking_9
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -43,7 +64,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -57,7 +78,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 80
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -78,10 +99,10 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -109,12 +130,12 @@ TextureImporter:
       name: Muffin_Walking_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 10
-        width: 220
-        height: 175
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 17
+        y: 2
+        width: 218
+        height: 174
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -128,37 +149,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Muffin_Walking_1
-      rect:
-        serializedVersion: 2
-        x: 428
-        y: 9
-        width: 171
-        height: 176
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f72eabe87ac33ac40800000000000000
-      internalID: 5522324258438177407
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Muffin_Walking_2
       rect:
         serializedVersion: 2
-        x: 605
-        y: 7
-        width: 179
-        height: 181
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 280
+        y: 2
+        width: 202
+        height: 174
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -175,20 +174,20 @@ TextureImporter:
       name: Muffin_Walking_3
       rect:
         serializedVersion: 2
-        x: 232
-        y: 11
-        width: 192
-        height: 173
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 535
+        y: 1
+        width: 214
+        height: 174
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: 15721c8b765c3cd4e8b690f21cc69aa5
-      internalID: 198083789
+      spriteID: d1160111ecc378730800000000000000
+      internalID: 4001233649689190685
       vertices: []
       indices: 
       edges: []
@@ -197,20 +196,20 @@ TextureImporter:
       name: Muffin_Walking_4
       rect:
         serializedVersion: 2
-        x: 791
-        y: 7
-        width: 211
-        height: 177
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 762
+        y: 4
+        width: 186
+        height: 174
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: aa84d08ac5d97cc4eb073318e8d14ac7
-      internalID: 2116817654
+      spriteID: d37a9bdb107ade6e0800000000000000
+      internalID: -1806604249585834179
       vertices: []
       indices: 
       edges: []
@@ -219,20 +218,64 @@ TextureImporter:
       name: Muffin_Walking_5
       rect:
         serializedVersion: 2
-        x: 1038
-        y: 11
-        width: 207
-        height: 177
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 1007
+        y: 0
+        width: 230
+        height: 174
+      alignment: 8
+      pivot: {x: 1, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: 0
+      tessellationDetail: -1
       bones: []
-      spriteID: a1e93ab90a29d0542951b3a5b41941d7
-      internalID: -92471885
+      spriteID: be3b8300d21379900800000000000000
+      internalID: 691075137171665899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muffin_Walking_6
+      rect:
+        serializedVersion: 2
+        x: 1543
+        y: 0
+        width: 185
+        height: 174
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311034977410fa6b0800000000000000
+      internalID: -5283002431393562349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Muffin_Walking_8
+      rect:
+        serializedVersion: 2
+        x: 1304
+        y: 0
+        width: 171
+        height: 174
+      alignment: 8
+      pivot: {x: 1, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d00110d5b5c6c19f0800000000000000
+      internalID: -496402719259422707
       vertices: []
       indices: 
       edges: []
@@ -241,7 +284,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 1b5806388a93c1a4d8410c157042e942
+    spriteID: 606070208f8c295428e7ce49ebb225d7
     internalID: 0
     vertices: []
     indices: 
@@ -254,9 +297,13 @@ TextureImporter:
       Muffin_Walking_0: 2681519882571846479
       Muffin_Walking_1: 5522324258438177407
       Muffin_Walking_2: 6176773325926874937
-      Muffin_Walking_3: 198083789
-      Muffin_Walking_4: 2116817654
-      Muffin_Walking_5: -92471885
+      Muffin_Walking_3: 4001233649689190685
+      Muffin_Walking_4: -1806604249585834179
+      Muffin_Walking_5: 691075137171665899
+      Muffin_Walking_6: -5283002431393562349
+      Muffin_Walking_7: -432582834501253468
+      Muffin_Walking_8: -496402719259422707
+      Muffin_Walking_9: -471004367753918316
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

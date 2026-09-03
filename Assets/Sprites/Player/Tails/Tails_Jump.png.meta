@@ -1,19 +1,25 @@
 fileFormatVersion: 2
-guid: 8dc9f08ed1786c847b9e037347acb769
+guid: 2c2f27292191019419f2e4fdf6b9bc41
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 5438627464627125388
-    second: Muffin_Idle_0
+      213: 2085460503791227322
+    second: Tails_Jump_0
   - first:
-      213: 5190626657574520552
-    second: Muffin_Idle_1
+      213: -8690194148143961697
+    second: Tails_Jump_1
   - first:
-      213: 4347606784927784358
-    second: Muffin_Idle_2
+      213: 7866278676320783579
+    second: Tails_Jump_2
   - first:
-      213: -8116049356997022495
-    second: Muffin_Idle_3
+      213: 566850976352266435
+    second: Tails_Jump_3
+  - first:
+      213: -7631427861079569570
+    second: Tails_Jump_4
+  - first:
+      213: -2347349555184725622
+    second: Tails_Jump_5
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -60,7 +66,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 90
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,89 +115,133 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Muffin_Idle_0
+      name: Tails_Jump_0
       rect:
         serializedVersion: 2
-        x: 4
-        y: 1
-        width: 243
-        height: 211
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        x: 6
+        y: 0
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8c78ce2dd2e97b40800000000000000
-      internalID: 5438627464627125388
+      spriteID: ab15599674b01fc10800000000000000
+      internalID: 2085460503791227322
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Muffin_Idle_1
+      name: Tails_Jump_1
       rect:
         serializedVersion: 2
-        x: 248
+        x: 60
         y: 0
-        width: 241
-        height: 213
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8e60766a17fc80840800000000000000
-      internalID: 5190626657574520552
+      spriteID: f9963b2077a366780800000000000000
+      internalID: -8690194148143961697
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Muffin_Idle_2
+      name: Tails_Jump_2
       rect:
         serializedVersion: 2
-        x: 512
+        x: 113
         y: 0
-        width: 227
-        height: 205
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6add2b6165dc55c30800000000000000
-      internalID: 4347606784927784358
+      spriteID: bdc845e57c2aa2d60800000000000000
+      internalID: 7866278676320783579
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Muffin_Idle_3
+      name: Tails_Jump_3
       rect:
         serializedVersion: 2
-        x: 742
+        x: 167
         y: 0
-        width: 254
-        height: 204
-      alignment: 8
-      pivot: {x: 1, y: 0}
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1eca7a84c100e5f80800000000000000
-      internalID: -8116049356997022495
+      spriteID: 3c86f0ea5fbddd700800000000000000
+      internalID: 566850976352266435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tails_Jump_4
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 0
+        width: 33
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5b455b1bc8b71690800000000000000
+      internalID: -7631427861079569570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tails_Jump_5
+      rect:
+        serializedVersion: 2
+        x: 275
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a811b8f240a8c6fd0800000000000000
+      internalID: -2347349555184725622
       vertices: []
       indices: 
       edges: []
@@ -200,7 +250,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 87bbb6f3cc24ee442b949b314fc202bd
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -210,10 +260,12 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Muffin_Idle_0: 5438627464627125388
-      Muffin_Idle_1: 5190626657574520552
-      Muffin_Idle_2: 4347606784927784358
-      Muffin_Idle_3: -8116049356997022495
+      Tails_Jump_0: 2085460503791227322
+      Tails_Jump_1: -8690194148143961697
+      Tails_Jump_2: 7866278676320783579
+      Tails_Jump_3: 566850976352266435
+      Tails_Jump_4: -7631427861079569570
+      Tails_Jump_5: -2347349555184725622
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
