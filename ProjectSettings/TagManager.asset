@@ -56,5 +56,8 @@ TagManager:
   - name: Foreground
     uniqueID: 3974643257
     locked: 0
+  - name: Armadilha
+    uniqueID: 2789784739
+    locked: 0
   m_RenderingLayers:
   - Default
