@@ -1,37 +1,28 @@
 fileFormatVersion: 2
-guid: 9752eb7e38eb88e4c9f40603b34171cd
+guid: 9396bdc6489044248ab2f0dd0e19d9e4
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1381712435141439528
-    second: Tails_Walking_0
+      213: -3688446553570326870
+    second: Tiro_Torreta_0
   - first:
-      213: -1410187266951256210
-    second: Tails_Walking_1
+      213: 2409326814328087438
+    second: Tiro_Torreta_1
   - first:
-      213: 1975446645978610708
-    second: Tails_Walking_2
+      213: -818512606820819403
+    second: Tiro_Torreta_2
   - first:
-      213: -2222800200414728218
-    second: Tails_Walking_3
+      213: -1478787935365833345
+    second: Tiro_Torreta_3
   - first:
-      213: -8182822276924517900
-    second: Tails_Walking_4
+      213: -3680722044898839068
+    second: Tiro_Torreta_4
   - first:
-      213: 284802770696985713
-    second: Tails_Walking_5
+      213: -4342408729417148822
+    second: Tiro_Torreta_5
   - first:
-      213: 4298152742481739307
-    second: Tails_Walking_6
-  - first:
-      213: -9005245447931650196
-    second: Tails_Walking_7
-  - first:
-      213: 5084199448296299310
-    second: Tails_Walking_8
-  - first:
-      213: -9016865335369299183
-    second: Tails_Walking_9
+      213: 4096078435848900320
+    second: Tiro_Torreta_6
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -78,7 +69,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 16
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -127,221 +118,177 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tails_Walking_0
+      name: Tiro_Torreta_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 45
-        height: 36
+        width: 21
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 8df87a16cdb23dce0800000000000000
-      internalID: -1381712435141439528
+      spriteID: aa64d69d66100dcc0800000000000000
+      internalID: -3688446553570326870
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tails_Walking_1
+      name: Tiro_Torreta_1
       rect:
         serializedVersion: 2
-        x: 58
+        x: 24
         y: 0
-        width: 45
-        height: 35
+        width: 21
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: e676796f6220e6ce0800000000000000
-      internalID: -1410187266951256210
+      spriteID: e8369d3f8f5af6120800000000000000
+      internalID: 2409326814328087438
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tails_Walking_2
+      name: Tiro_Torreta_2
       rect:
         serializedVersion: 2
-        x: 123
+        x: 49
         y: 0
-        width: 41
-        height: 36
+        width: 20
+        height: 8
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 41cba4612423a6b10800000000000000
-      internalID: 1975446645978610708
+      spriteID: 53e144aee1f04a4f0800000000000000
+      internalID: -818512606820819403
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tails_Walking_3
+      name: Tiro_Torreta_3
       rect:
         serializedVersion: 2
-        x: 186
-        y: 0
-        width: 45
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6efec9f9ef60721e0800000000000000
-      internalID: -2222800200414728218
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tails_Walking_4
-      rect:
-        serializedVersion: 2
-        x: 241
-        y: 0
-        width: 47
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 4f1d2cb5e76c07e80800000000000000
-      internalID: -8182822276924517900
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tails_Walking_5
-      rect:
-        serializedVersion: 2
-        x: 305
-        y: 0
-        width: 47
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 17cd07a6c92d3f300800000000000000
-      internalID: 284802770696985713
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tails_Walking_6
-      rect:
-        serializedVersion: 2
-        x: 364
-        y: 0
-        width: 45
-        height: 35
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b2ebefd852b16ab30800000000000000
-      internalID: 4298152742481739307
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tails_Walking_7
-      rect:
-        serializedVersion: 2
-        x: 429
-        y: 0
-        width: 41
-        height: 36
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: c6f94d81af0f60380800000000000000
-      internalID: -9005245447931650196
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tails_Walking_8
-      rect:
-        serializedVersion: 2
-        x: 492
-        y: 0
-        width: 46
-        height: 38
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e2b10f20674be8640800000000000000
-      internalID: 5084199448296299310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tails_Walking_9
-      rect:
-        serializedVersion: 2
-        x: 553
+        x: 74
         y: 1
-        width: 50
-        height: 37
+        width: 19
+        height: 6
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 11b87c930c8add280800000000000000
-      internalID: -9016865335369299183
+      spriteID: f7dd26e253a4a7be0800000000000000
+      internalID: -1478787935365833345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiro_Torreta_4
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 1
+        width: 19
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5290668, y: 0.47698984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4e5fadc2dc27becc0800000000000000
+      internalID: -3680722044898839068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiro_Torreta_5
+      rect:
+        serializedVersion: 2
+        x: 145
+        y: 0
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a661985844aacb3c0800000000000000
+      internalID: -4342408729417148822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiro_Torreta_6
+      rect:
+        serializedVersion: 2
+        x: 168
+        y: 0
+        width: 20
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0ee49eca2a138d830800000000000000
+      internalID: 4096078435848900320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Tiro_Torreta_7
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 1
+        width: 19
+        height: 6
+      alignment: 9
+      pivot: {x: 0.5290668, y: 0.47698984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af305de1a0e6a1443a8b458e65e82151
+      internalID: 1569625193
       vertices: []
       indices: 
       edges: []
@@ -350,7 +297,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f01051d383bcb564c91df3241c826b29
     internalID: 0
     vertices: []
     indices: 
@@ -360,16 +307,14 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Tails_Walking_0: -1381712435141439528
-      Tails_Walking_1: -1410187266951256210
-      Tails_Walking_2: 1975446645978610708
-      Tails_Walking_3: -2222800200414728218
-      Tails_Walking_4: -8182822276924517900
-      Tails_Walking_5: 284802770696985713
-      Tails_Walking_6: 4298152742481739307
-      Tails_Walking_7: -9005245447931650196
-      Tails_Walking_8: 5084199448296299310
-      Tails_Walking_9: -9016865335369299183
+      Tiro_Torreta_0: -3688446553570326870
+      Tiro_Torreta_1: 2409326814328087438
+      Tiro_Torreta_2: -818512606820819403
+      Tiro_Torreta_3: -1478787935365833345
+      Tiro_Torreta_4: -3680722044898839068
+      Tiro_Torreta_5: -4342408729417148822
+      Tiro_Torreta_6: 4096078435848900320
+      Tiro_Torreta_7: 1569625193
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

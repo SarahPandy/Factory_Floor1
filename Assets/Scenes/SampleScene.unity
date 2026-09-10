@@ -206,7 +206,7 @@ Transform:
   m_GameObject: {fileID: 37426761}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.31, y: -4.2, z: 0}
+  m_LocalPosition: {x: 59.89, y: -4.2, z: 0}
   m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -229,7 +229,7 @@ MonoBehaviour:
   tempoAtivoE: 5
   tempoInativoE: 3.5
   tempoEntreDisparos: 2
-  prefabProjetil: {fileID: 802720729615124310, guid: 49284a19de52cf743a0c494af02e0ecd, type: 3}
+  prefabProjetil: {fileID: 5400751538521714058, guid: 49284a19de52cf743a0c494af02e0ecd, type: 3}
   disparador: {fileID: 622307461}
   tempoAtivoT: 4
   tempoIdleT: 1
@@ -387,7 +387,7 @@ Transform:
   m_GameObject: {fileID: 519420028}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3010225, y: -1.4803406, z: -10}
+  m_LocalPosition: {x: 2.3006587, y: -1.4803206, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -36264,7 +36264,7 @@ GameObject:
   - component: {fileID: 1294818135}
   - component: {fileID: 1294818134}
   m_Layer: 0
-  m_Name: Player_Tails (1)
+  m_Name: Player2_Tails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36477,7 +36477,7 @@ Transform:
   m_GameObject: {fileID: 1294818133}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.55, y: -2.16, z: 0}
+  m_LocalPosition: {x: -6.89, y: -2.16, z: 0}
   m_LocalScale: {x: 4.74, y: 4.74, z: 4.74}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -36730,7 +36730,7 @@ GameObject:
   - component: {fileID: 2100382998}
   - component: {fileID: 2100382997}
   m_Layer: 0
-  m_Name: Player_Tails
+  m_Name: Player1_Tails
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

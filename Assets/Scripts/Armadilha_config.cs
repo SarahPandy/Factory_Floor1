@@ -25,6 +25,23 @@ public class Armadilha_config : MonoBehaviour
     [SerializeField] private float tempoAtivoT = 4f;
     [SerializeField] private float tempoIdleT = 4f;
     private float tempoT = 0;
+    private Collider2D colisorTorreta;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     private void Start()
@@ -40,10 +57,8 @@ public class Armadilha_config : MonoBehaviour
                 AtivaEspeto();
                 break;
             case TipoArmadilha.Torreta:
-                Debug.Log("Torreta selecionada");
                 AtivaTorreta();
                 break;
-
         }
     }
 
@@ -54,52 +69,39 @@ public class Armadilha_config : MonoBehaviour
         if (tempoE < tempoAtivoE)
         {
             anim.SetInteger("Estado", 1);
-            //colisorEspeto.enabled = true;
+            colisorEspeto.enabled = true;
         }
         else if (tempoE < tempoAtivoE + tempoInativoE)
         {
             anim.SetInteger("Estado", 2);
-            //colisorEspeto.enabled = false;
+            colisorEspeto.enabled = false;
         }
         else
         {
             tempoE = 0f;
         }
-
-
     }
 
     private void AtivaTorreta()
     {
-        Debug.Log("Torreta ativada");
         tempoT += Time.deltaTime;
         if (tempoT < tempoAtivoT)
         {
             anim.SetInteger("EstadoT", 1);
-            Debug.Log("animação Estado = 1");
+            colisorTorreta.enabled = true;
         }
         else if (tempoT < tempoAtivoT + tempoIdleT)
         {
             anim.SetInteger("EstadoT", 2);
-            Debug.Log("animação Estado = 2");
+            colisorTorreta.enabled = true;
         }
         else
         {
             tempoT = 0f;
         }
-
-
-
-
     }
-
     public void DisparoTorreta()
     {
-
         Instantiate(prefabProjetil, disparador.position, disparador.rotation);
-
     }
-
-
-
 }
