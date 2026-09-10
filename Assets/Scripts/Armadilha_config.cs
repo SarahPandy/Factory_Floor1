@@ -1,25 +1,31 @@
 using UnityEngine;
-using UnityEngine.Experimental.Playables;
 
 public enum TipoArmadilha { Espeto, Torreta }
 
 public class Armadilha_config : MonoBehaviour
 {
-    
+
     [Header("Configurações da Armadilha")]
     [SerializeField] private TipoArmadilha tipo = TipoArmadilha.Espeto;
-    //espeto
-    [SerializeField] private float tempoAtivo = 5f;
-    [SerializeField] private float tempoSubindo = 2f;
-    [SerializeField] private float tempoInativo = 3.5f;
-    //torreta
-    [SerializeField] private float tempoEntreDisparos = 2f;
-    [SerializeField] private float velocidadeDisparo = 20f;
-
     private Animator anim;
-    private float tempo = 0;
-    private float cronometro;
-    private Collider colisorEspeto;
+
+    [Header("Configurações Espetos")]
+    //espeto
+    [SerializeField] private float tempoAtivoE = 5f;
+    [SerializeField] private float tempoInativoE = 3.5f;
+    private float tempoE = 0;
+    private Collider2D colisorEspeto;
+
+
+    [Header("Configurações Torreta")]
+    //torreta
+    [SerializeField] private float tempoEntreDisparos = 3f;
+    [SerializeField] private GameObject prefabProjetil;
+    [SerializeField] private Transform disparador;
+    [SerializeField] private float tempoAtivoT = 4f;
+    [SerializeField] private float tempoIdleT = 4f;
+    private float tempoT = 0;
+
 
     private void Start()
     {
@@ -28,12 +34,13 @@ public class Armadilha_config : MonoBehaviour
 
     private void Update()
     {
-        switch(tipo)
+        switch (tipo)
         {
             case TipoArmadilha.Espeto:
                 AtivaEspeto();
                 break;
             case TipoArmadilha.Torreta:
+                Debug.Log("Torreta selecionada");
                 AtivaTorreta();
                 break;
 
@@ -42,55 +49,57 @@ public class Armadilha_config : MonoBehaviour
 
     private void AtivaEspeto()
     {
-        tempo += Time.deltaTime;
+        tempoE += Time.deltaTime;
 
-        if (tempo < tempoAtivo)
+        if (tempoE < tempoAtivoE)
         {
             anim.SetInteger("Estado", 1);
-            colisorEspeto.enabled = true;
+            //colisorEspeto.enabled = true;
         }
-        else if ( tempo < tempoAtivo + tempoInativo)
+        else if (tempoE < tempoAtivoE + tempoInativoE)
         {
-           anim.SetInteger("Estado", 2);
-            colisorEspeto.enabled = false; 
+            anim.SetInteger("Estado", 2);
+            //colisorEspeto.enabled = false;
         }
         else
         {
-            tempo = 0f;
+            tempoE = 0f;
         }
-        //else if (tempo < tempoSubindo + tempoAtivo + tempoInativo )
-        //{
-        //    anim.SetInteger("Estado", 3); //desativa espeto
-        //    colisorEspeto.enabled = false;
-        //    tempo = 0;
-        //}
-        //else
-        //{
-        //    tempo = 0;
-        //}
 
-        //switch (tempo)
-        //{
-        //    case 1:
-        //        anim.Play("Active_Espeto");
-        //        colisorEspeto.enabled = true;
-        //        break;
-
-        //    case 2:
-        //        anim.Play("Idle_Espeto");
-        //        colisorEspeto.enabled = true;
-        //        break;
-
-        //    case 3:
-        //        anim.Play("Deactive_Espeto");
-        //        colisorEspeto.enabled = false;
-        //        break;
-        //}
 
     }
-    
+
     private void AtivaTorreta()
     {
-        
+        Debug.Log("Torreta ativada");
+        tempoT += Time.deltaTime;
+        if (tempoT < tempoAtivoT)
+        {
+            anim.SetInteger("EstadoT", 1);
+            Debug.Log("animação Estado = 1");
+        }
+        else if (tempoT < tempoAtivoT + tempoIdleT)
+        {
+            anim.SetInteger("EstadoT", 2);
+            Debug.Log("animação Estado = 2");
+        }
+        else
+        {
+            tempoT = 0f;
+        }
+
+
+
+
     }
+
+    public void DisparoTorreta()
+    {
+
+        Instantiate(prefabProjetil, disparador.position, disparador.rotation);
+
+    }
+
+
+
 }
