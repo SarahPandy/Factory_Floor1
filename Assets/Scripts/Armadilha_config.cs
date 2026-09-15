@@ -28,22 +28,6 @@ public class Armadilha_config : MonoBehaviour
     private Collider2D colisorTorreta;
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     private void Start()
     {
         anim = GetComponent<Animator>();

@@ -6,6 +6,9 @@ TagManager:
   tags:
   - Armadilha
   - textoVida
+  - Moeda1
+  - Moeda2
+  - Player2
   layers:
   - Default
   - TransparentFX
@@ -60,6 +63,9 @@ TagManager:
     locked: 0
   - name: Armadilha
     uniqueID: 2789784739
+    locked: 0
+  - name: Moeda
+    uniqueID: 800423603
     locked: 0
   m_RenderingLayers:
   - Default
