@@ -2,35 +2,101 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
-
-
 public class Vida : MonoBehaviour
 {
-    public TextMeshProUGUI textoVida;
-    private int vidas;
-    private int vidasRestantes;
+    [Header("Configurações de Vida")]
+    [SerializeField] private int vidaMaxima = 5;
+    private int vidaAtual; // Mantida privada para evitar sobrescrita incorreta no Inspector
+    [SerializeField] private TextMeshProUGUI textoVida; // Referência ao componente de texto para exibir a vida
+    [Header("Feedback Visual de Dano (Flash)")]
+    public SpriteRenderer spriteRenderer;
+    public Color corDano = Color.red;       // Cor aplicada ao tomar dano
+    public float duracaoFlash = 0.15f;      // Tempo (em segundos) que a cor vermelha dura
 
-    void Start()
-    {
-        vidas = 5;
-    }
+    private Color corOriginal = Color.white; // Armazena a cor padrão do sprite
+    private float timerFlash;                // Contador de tempo manual
+    private bool piscando;                   // Flag para controlar se está no estado de flash
 
-    void Update()
-    {
-        
-    }
 
-    private void OnCollisionEnter2D(Collision Player)
+    Animator anim;
+    private void Awake()
     {
-        if(Player.gameObject.CompareTag("Armadilha"))
+        // Se o SpriteRenderer não for arrastado no Inspector, busca automaticamente no objeto
+        if (spriteRenderer == null)
         {
-            vidasRestantes = vidas - 1;
-            switch(vidasRestantes)
+            spriteRenderer = GetComponent<SpriteRenderer>();
+        }
+
+        // Armazena a cor original do Sprite no início do jogo
+        if (spriteRenderer != null)
+        {
+            corOriginal = spriteRenderer.color;
+        }
+    }
+
+    private void Start()
+    {
+        anim = GetComponent<Animator>();
+        vidaAtual = vidaMaxima;
+        textoVida.text = ($"{vidaAtual} x"); // Atualiza o texto da vida
+    }
+
+    private void Update()
+    {
+        // --- GERENCIADOR MANUAL DO TEMPO DE FLASH ---
+        if (piscando)
+        {
+            timerFlash += Time.deltaTime; // Soma o tempo de cada frame
+
+            // Quando o tempo acumulado atinge ou passa da duração desejada:
+            if (timerFlash >= duracaoFlash)
             {
-                case 0:
-                    SceneManager.LoadScene("GamePlay");
-                    break;
+                if (spriteRenderer != null)
+                {
+                    spriteRenderer.color = corOriginal; // Restaura a cor normal
+                }
+                piscando = false; // Desliga o estado de pisca
             }
         }
+    }
+
+    public void ReceberDano(int quantidadeDano)
+    {
+
+        Debug.Log("Levou dano!");
+
+        // Trava para evitar processar dano se o jogador já estiver morto ou em invulnerabilidade temporária
+        if (vidaAtual <= 0 || quantidadeDano <= 0) return;
+        if (piscando) return;
+
+        vidaAtual -= quantidadeDano;
+
+        
+        if (vidaAtual > 0)
+        {
+            // Aplica o efeito visual do Flash
+            if (spriteRenderer != null)
+            {
+                spriteRenderer.color = corDano; // Muda a cor para Vermelho imediatamente
+                timerFlash = 0f;               // Zera o temporizador
+                piscando = true;               // Ativa o contador no Update
+            }
+        }
+        else
+        {
+            vidaAtual = 0;
+            Morrer();
+        }
+        
+        textoVida.text = ($"{vidaAtual} x"); // Atualiza o texto da vida
+
+    }
+
+    private void Morrer()
+    {
+        anim.SetBool("IsDead", true);
+        Debug.Log($"{gameObject.name} morreu!");
+        SceneManager.LoadScene("GamePlay");
+        
     }
 }

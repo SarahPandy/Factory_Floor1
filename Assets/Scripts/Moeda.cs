@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Moeda : MonoBehaviour
 {
-    private bool moeda1;
-    private bool moeda2;
+    //private bool moeda1;
+    //private bool moeda2;
     private bool taComemorando;
     private Animator anim;
 
@@ -16,13 +16,15 @@ public class Moeda : MonoBehaviour
     {
         if(collision1.gameObject.CompareTag("Player") && gameObject.CompareTag("Moeda1"))
         {
-            moeda1 = true;
+            anim = collision1.gameObject.GetComponent<Animator>(); 
+            //moeda1 = true;
             Destroy(gameObject);
             anim.SetTrigger("IsTalles");
         }
         if (collision1.gameObject.CompareTag("Player2") && gameObject.CompareTag("Moeda2"))
         {
-            moeda2 = true;
+            anim = collision1.gameObject.GetComponent<Animator>();
+            //moeda2 = true;
             Destroy(gameObject);
             anim.SetTrigger("IsTalles");
         }

@@ -14,23 +14,28 @@ public class Armadilha_config : MonoBehaviour
     [SerializeField] private float tempoAtivoE = 5f;
     [SerializeField] private float tempoInativoE = 3.5f;
     private float tempoE = 0;
-    private Collider2D colisorEspeto;
+    [SerializeField] private Collider2D colisorEspeto;
 
 
     [Header("Configurações Torreta")]
     //torreta
-    [SerializeField] private float tempoEntreDisparos = 3f;
+    //[SerializeField] private float tempoEntreDisparos = 3f;
     [SerializeField] private GameObject prefabProjetil;
     [SerializeField] private Transform disparador;
     [SerializeField] private float tempoAtivoT = 4f;
     [SerializeField] private float tempoIdleT = 4f;
     private float tempoT = 0;
     private Collider2D colisorTorreta;
+    [Header("Áudio da Torreta")]
+    [SerializeField] private AudioClip somDisparo;
+    private AudioSource audioSource;
 
 
     private void Start()
     {
         anim = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
+        // ... restante da sua inicialização
     }
 
     private void Update()
@@ -72,20 +77,34 @@ public class Armadilha_config : MonoBehaviour
         if (tempoT < tempoAtivoT)
         {
             anim.SetInteger("EstadoT", 1);
-            colisorTorreta.enabled = true;
+            //colisorTorreta.enabled = true;
         }
         else if (tempoT < tempoAtivoT + tempoIdleT)
         {
             anim.SetInteger("EstadoT", 2);
-            colisorTorreta.enabled = true;
+            //colisorTorreta.enabled = true;
         }
         else
         {
             tempoT = 0f;
         }
+        
+
+        
+       
     }
     public void DisparoTorreta()
     {
         Instantiate(prefabProjetil, disparador.position, disparador.rotation);
+
+        // 2. Toca o efeito sonoro no momento do disparo
+        if (audioSource != null && somDisparo != null)
+        {
+            audioSource.PlayOneShot(somDisparo);
+        }
+
     }
+
+    
+
 }

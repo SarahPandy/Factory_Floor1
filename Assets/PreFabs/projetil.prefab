@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 3927141809079816056}
   - component: {fileID: 5011943083289937177}
   - component: {fileID: 4601214097131053339}
+  - component: {fileID: 3714505706316585286}
   m_Layer: 0
   m_Name: projetil
   m_TagString: Untagged
@@ -171,3 +172,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::Projetil
   velocidade: 10
   destruiApos: 0.5
+--- !u!114 &3714505706316585286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5400751538521714058}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 32b752a6fcef7a246816a1368abfb7b5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Dano
+  valorDano: 1
